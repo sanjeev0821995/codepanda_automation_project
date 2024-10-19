@@ -34,6 +34,21 @@ public class AdminUserManagement extends CommonUtils {
     @FindBy(css=".oxd-select-option span")
     List<WebElement> options;
 
+    @FindBy(xpath = "//input[@placeholder='Type for hints...']")
+    private WebElement employeeName;
+
+    @FindBy(xpath = "(//input[@type='password'])[1]")
+    private WebElement password;
+
+    @FindBy(xpath = "(//input[@type='password'])[2]")
+    private WebElement confirmPassword;
+
+    @FindBy(xpath = "//button[normalize-space()='Save']")
+    private WebElement saveButton;
+
+    @FindBy(xpath = "//button[normalize-space()='Cancel']")
+    private WebElement cancelButton;
+
     public void click(){
         addButton.click();
     }
@@ -41,6 +56,14 @@ public class AdminUserManagement extends CommonUtils {
     public List<WebElement> clickDropdown(WebElement dropdown){
         dropdown.click();
         return options;
+    }
+
+    public void saveUser(String empName, String pwd,String confirmPwd){
+        employeeName.sendKeys(empName);
+        password.sendKeys(pwd);
+        confirmPassword.sendKeys(confirmPwd);
+        saveButton.click();
+
     }
 
 
