@@ -6,16 +6,16 @@
             <class name="org.orange.admintestcases.AdminFunctionalityTest"/>
         </classes>
     </test>
-    <test name="Admin Tests In Edge">
-        <parameter name="browser" value="Edge"></parameter>
-        <classes>
-            <class name="org.orange.admintestcases.AdminFunctionalityTest"/>
-        </classes>
-    </test>
-    <test name="Admin Tests In FireFox">
-        <parameter name="browser" value="Firefox"></parameter>
-        <classes>
-            <class name="org.orange.admintestcases.AdminFunctionalityTest"/>
-        </classes>
-    </test>
+<!--    <test name="Admin Tests In Edge">-->
+<!--        <parameter name="browser" value="Edge"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="org.orange.admintestcases.AdminFunctionalityTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Admin Tests In FireFox">-->
+<!--        <parameter name="browser" value="Firefox"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="org.orange.admintestcases.AdminFunctionalityTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
